@@ -1,0 +1,244 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #ddd;
+	font-family: "arial", sans-serif;
+	color: #444;
+}
+
+a {
+	display: inline-block;
+	color: rgb(255, 134, 94);
+}
+
+.container {
+	width: 73%;
+	background-color: white;
+	margin: 0px auto 0px;
+	padding-left: 15px;
+	padding-right: 15px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr) repeat(1, 0.5fr);
+	grid-template-rows: 150px 350px 1100px 30px;
+	grid-template-areas:
+	'header header header'
+	'image image image'
+	'content content identitas'
+	'footer footer footer';
+}
+
+.container .item {
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------HEADER STYLE--------*/
+.container .item.header {
+	/*background-color: hotpink;*/
+	grid-area: header;
+}
+
+.container .item.header .judul {
+	font-size: 50px;
+	margin: 25px 18px 0px;
+}
+
+.container .item.header .list a {
+	display: inline-block;
+	font-size: 15px;
+	text-decoration: none;
+	border-right: 2px solid #444;
+	margin-left: 10px;
+	padding-right: 15px;
+	text-transform: lowercase;
+	transition: .3s;
+}
+
+.container .item.header .list a:hover {
+	color: lightskyblue;
+}
+
+.container .item.header .list .sambrama {
+	margin-left: 35px;
+}
+
+.container .item.header .list .artikel {
+	border-right: none;
+}
+
+/*---------END OF HEADER STYLE----------*/
+
+
+
+
+
+
+
+
+
+/*---------IMAGE STYLE----------*/
+.container .item.image {
+	/*background-color: yellow;*/
+	background-image: url(img/hero-image.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0 -13px;
+	border-top: 5px solid rgb(255, 134, 94);
+	border-bottom: 5px solid #444;
+	/*margin-bottom: 20px;*/
+	grid-area: image;
+}
+
+/*---------END OF IMAGE STYLE-----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------CONTENT STYLE------------*/
+.container .item.content {
+	/*background-color: white;*/
+	grid-area: content;
+	margin-top: -8px;
+}
+
+.container .item.content .copyright-image p {
+	font-size: 10.3px;
+	font-style: italic;
+	margin-left: 5px;
+}
+
+.container .item.content .judul h2 {
+	font-size: 30px;
+	margin-left: 15px;
+	margin-top: 30px;
+}
+
+.container .item.content .judul p {
+	font-size: 11px;
+	margin-left: 18px;
+	margin-top: -23px;
+}
+
+.container .item.content .main {
+	background-color: white;
+	margin-top: 35px;
+	margin-left: -15px;
+	padding-left: 20px;
+	padding-right: 30px;
+}
+
+.container .item.content .main p {
+	font-size: 15px;
+	text-indent: 30px;
+	line-height: 23px;
+}
+/*----------END OF CONTENT STYLE-----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------IDENTITAS STYLE-----------*/
+.container .item.identitas {
+	background-color: white;
+	grid-area: identitas;
+	margin-top: 110px;
+	margin-left: -10px;
+	margin-right: 10px;
+	padding-right: 25px;
+}
+
+.container .item.identitas .isi {
+	/*border: 3px solid #444;*/
+}
+
+.container .item.identitas h4 {
+	font-size: 22px;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.container .item.identitas img {
+	margin-left: 25%;
+	width: 100px;
+	margin-top: -20px;
+}
+
+.container .item.identitas h6 {
+	font-size: 11.5px;
+	text-align: center;
+	margin-top: -3px;
+	line-height: 15px;
+}
+
+.container .item.identitas p {
+	font-size: 12px;
+	line-height: 20px;
+	margin-top: -10px;
+	padding: 0 10px;
+}
+/*---------END OF IDENTITAS STYLE---------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------FOOTER------------*/
+.container .item.footer {
+	width: 103.1%;
+	background-color: #333;
+	grid-area: footer;
+	margin-left: -15px;
+	margin-top: -20px;
+}
+
+.container .item.footer p {
+	color: white;
+	font-size: 13px;
+	line-height: 30px;
+	text-align: center;
+}
+/*----------END OF FOOTER STYLE------------*/
